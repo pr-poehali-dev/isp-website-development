@@ -111,7 +111,7 @@ export default {
 					'@apply transition-transform duration-200 hover:scale-105': {}
 				},
 				'.text-gradient': {
-					'background': 'linear-gradient(135deg, #0EA5E9 0%, #8B5CF6 100%)',
+					'background': 'linear-gradient(135deg, #FF7A00 0%, #1D7FDB 100%)',
 					'-webkit-background-clip': 'text',
 					'-webkit-text-fill-color': 'transparent',
 					'background-clip': 'text'

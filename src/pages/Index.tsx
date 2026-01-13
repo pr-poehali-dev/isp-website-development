@@ -27,8 +27,8 @@ export default function Index() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Icon name="Zap" className="text-primary" size={28} />
-          <span className="text-2xl font-heading font-bold text-gradient">NetSpeed</span>
+          <Icon name="Wifi" className="text-primary" size={32} />
+          <span className="text-2xl font-heading font-bold text-primary">ВикомТел</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
           {['Главная', 'Тарифы', 'Телевидение', 'Поддержка', 'Контакты'].map((item) => (
@@ -52,7 +52,7 @@ export default function Index() {
 
   const renderHero = () => (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
       <div className="absolute inset-0" style={{
         backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(14, 165, 233, 0.15) 1px, transparent 0)',
         backgroundSize: '40px 40px'
@@ -64,8 +64,8 @@ export default function Index() {
             <span className="text-primary font-semibold text-sm">⚡ Высокоскоростной интернет нового поколения</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-gradient leading-tight">
-            Будущее скорости уже здесь
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight">
+            <span className="text-primary">Быстрый интернет</span> для вашего дома
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -369,8 +369,8 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Icon name="Zap" className="text-primary" size={24} />
-              <span className="text-xl font-heading font-bold text-gradient">NetSpeed</span>
+              <Icon name="Wifi" className="text-primary" size={24} />
+              <span className="text-xl font-heading font-bold text-primary">ВикомТел</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Высокоскоростной интернет и цифровое ТВ для вашего дома

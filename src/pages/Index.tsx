@@ -11,10 +11,10 @@ export default function Index() {
   const [selectedTariff, setSelectedTariff] = useState<string | null>(null);
 
   const tariffs = [
-    { id: 1, name: 'Старт', speed: 100, price: 499, features: ['100 Мбит/с', 'Wi-Fi роутер', 'Без ограничений'] },
-    { id: 2, name: 'Оптимум', speed: 300, price: 699, features: ['300 Мбит/с', 'Wi-Fi роутер', 'Приоритетная поддержка'], popular: true },
-    { id: 3, name: 'Максимум', speed: 500, price: 999, features: ['500 Мбит/с', 'Wi-Fi 6 роутер', 'VIP поддержка 24/7'] },
-    { id: 4, name: 'Гигабит', speed: 1000, price: 1499, features: ['1000 Мбит/с', 'Wi-Fi 6E роутер', 'Статический IP', 'Премиум поддержка'] },
+    { id: 1, name: 'Комбо 100', speed: 100, price: 1000, features: ['100 Мбит/с', 'Интернет + ТВ', 'Без ограничений'] },
+    { id: 2, name: 'Комбо 200', speed: 200, price: 1200, features: ['200 Мбит/с', 'Интернет + ТВ', 'Приоритетная поддержка'], popular: true },
+    { id: 3, name: 'Комбо 200 (Оптимум+)', speed: 200, price: 1400, features: ['200 Мбит/с', 'Интернет + ТВ Расширенный', 'VIP поддержка 24/7'] },
+    { id: 4, name: 'Комбо 200 (Премиум)', speed: 200, price: 1800, features: ['200 Мбит/с', 'Интернет + ТВ Премиум', 'Статический IP', 'Премиум поддержка'] },
   ];
 
   const tvPackages = [
@@ -27,8 +27,8 @@ export default function Index() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Icon name="Wifi" className="text-primary" size={32} />
-          <span className="text-2xl font-heading font-bold text-primary">ВикомТел</span>
+          <span className="text-3xl">🐬</span>
+          <span className="text-2xl font-heading font-bold text-primary">ООО"Виком"</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
           {['Главная', 'Тарифы', 'Телевидение', 'Поддержка', 'Контакты'].map((item) => (
@@ -369,8 +369,8 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Icon name="Wifi" className="text-primary" size={24} />
-              <span className="text-xl font-heading font-bold text-primary">ВикомТел</span>
+              <span className="text-2xl">🐬</span>
+              <span className="text-xl font-heading font-bold text-primary">ООО"Виком"</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Высокоскоростной интернет и цифровое ТВ для вашего дома

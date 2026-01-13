@@ -164,46 +164,6 @@ export default function Index() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-          {tvPackages.map((pkg) => (
-            <Card
-              key={pkg.id}
-              className={`relative p-8 bg-card/50 backdrop-blur border-2 transition-all hover-scale ${
-                pkg.popular ? 'border-primary shadow-xl shadow-primary/20' : 'border-border hover:border-primary/50'
-              }`}
-            >
-              {pkg.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary rounded-full text-xs font-semibold">
-                  Хит продаж
-                </div>
-              )}
-
-              <div className="text-center mb-6">
-                <Icon name="Tv" className="text-primary mx-auto mb-3" size={48} />
-                <h3 className="text-2xl font-heading font-bold mb-2">{pkg.name}</h3>
-                <div className="text-4xl font-heading font-bold text-primary mb-1">{pkg.channels}+</div>
-                <div className="text-sm text-muted-foreground mb-4">каналов</div>
-                <div className="text-3xl font-bold">
-                  {pkg.price} ₽<span className="text-sm text-muted-foreground font-normal">/мес</span>
-                </div>
-              </div>
-
-              <div className="space-y-3 mb-6">
-                {pkg.features.map((feature, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm">
-                    <Icon name="Check" className="text-primary flex-shrink-0" size={16} />
-                    <span>{feature}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-                Подключить пакет
-              </Button>
-            </Card>
-          ))}
-        </div>
-
         <div className="max-w-4xl mx-auto">
           <Card className="p-8 bg-card/50 backdrop-blur border-border">
             <h3 className="text-2xl font-heading font-bold mb-6 text-center">Популярные каналы</h3>

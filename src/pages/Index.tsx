@@ -160,36 +160,18 @@ export default function Index() {
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-gradient">Цифровое телевидение</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Более 300 каналов в HD и 4K качестве. Кино, спорт, развлечения для всей семьи
+            Более 400+ каналов в HD и 4K качестве. Кино, спорт, развлечения для всей семьи
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="p-8 bg-card/50 backdrop-blur border-border">
-            <h3 className="text-2xl font-heading font-bold mb-6 text-center">Популярные каналы</h3>
-            <Tabs defaultValue="basic" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 mb-6">
-                <TabsTrigger value="basic">Базовый</TabsTrigger>
-                <TabsTrigger value="extended">Расширенный</TabsTrigger>
-                <TabsTrigger value="premium">Премиум</TabsTrigger>
-              </TabsList>
-              <TabsContent value="basic" className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {['Первый канал', 'Россия 1', 'НТВ', 'СТС', 'ТНТ', 'Пятый канал', 'Культура', 'Матч ТВ'].map((ch) => (
-                  <div key={ch} className="p-3 bg-muted/50 rounded-lg text-center text-sm font-medium">{ch}</div>
-                ))}
-              </TabsContent>
-              <TabsContent value="extended" className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {['Eurosport', 'Discovery', 'Animal Planet', 'National Geographic', 'Viasat History', 'Paramount', 'Sony Turbo', 'Amedia Premium'].map((ch) => (
-                  <div key={ch} className="p-3 bg-muted/50 rounded-lg text-center text-sm font-medium">{ch}</div>
-                ))}
-              </TabsContent>
-              <TabsContent value="premium" className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {['HBO', 'Fox', 'Universal', 'Setanta Sports', 'Eurosport 4K', 'Viasat Sport', 'Fuel TV', 'MyZen TV'].map((ch) => (
-                  <div key={ch} className="p-3 bg-muted/50 rounded-lg text-center text-sm font-medium">{ch}</div>
-                ))}
-              </TabsContent>
-            </Tabs>
-          </Card>
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="https://cdn.poehali.dev/files/Телевидиние.jpg" 
+              alt="Семья смотрит телевизор" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
